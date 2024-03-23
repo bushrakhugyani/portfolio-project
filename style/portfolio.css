@@ -1,8 +1,10 @@
 :root {
-  --branding-color: #f6bbbbdb;
-  --secondary-color: #f2e9e9;
+  --branding-color: #f9dadadb;
+  --primary-color: rgb(99, 113, 186);
+  --secondary-color: #fbf9f9;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 body {
   text-align: center;
@@ -25,7 +27,11 @@ h1 {
   font-size: 70px;
 }
 h2 {
-  font-size: 30px;
+  font-size: 50px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
 p {
   font-family: var(--default-font-family);
@@ -33,23 +39,60 @@ p {
   font-style: normal;
   font-size: 25px;
   color: black;
-  margin: 0;
+  margin: 10px;
+}
+img {
+  flex: 1;
 }
 
 .btn-branding {
-  background: white;
+  background: var(--primary-color);
   border: none;
   border-radius: 15px;
-  color: black;
+  color: var(--secondary-color);
   font-size: 18px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 27px;
   padding: 15px 26px;
   margin: 30px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 800px) {
+.col-sm-6 {
+  line-height: 1.5;
+  text-align: left;
+  padding: 10px;
+}
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  display: center;
+}
+.mt-5 {
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
   p {
     font-size: 20px;
+  }
+
+  .col-sm-6 {
+    flex: auto;
+    width: 100%;
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
   }
 }
