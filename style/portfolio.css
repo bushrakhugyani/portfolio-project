@@ -5,12 +5,13 @@
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --bs-border-radius: 1rem;
 }
-body {
+.hero {
   text-align: center;
   background: var(--branding-color);
   margin-top: 50px;
-  padding: 30px;
+  padding: 160px 20px;
   font-family: var(--default-font-family);
 }
 h1,
@@ -23,26 +24,39 @@ h6 {
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
-h1 {
+.hero h1 {
   font-size: 70px;
 }
-h2 {
+.hero h2 {
   font-size: 50px;
 }
-.container {
+.about-section h1 {
+  font-size: 64px;
+  line-height: 60px;
+}
+.about-paragraph {
+  font-size: 22px;
+  font-weight: 400;
+}
+.about-section img {
+  width: 500px;
+  height: 500px;
+}
+.about-section h2 {
+  font-size: 36px;
+}
+.hero .container {
   display: flex;
   flex-wrap: wrap;
+  max-width: max-content;
 }
-p {
+.hero p {
   font-family: var(--default-font-family);
   font-weight: bold;
   font-style: normal;
   font-size: 30px;
   color: black;
   margin: 10px;
-}
-img {
-  flex: 1;
 }
 
 .btn-branding {
@@ -62,7 +76,7 @@ img {
   text-align: left;
   padding: 10px;
 }
-.content {
+.hero .content {
   font-size: 22px;
   font-weight: 400;
 }
@@ -79,13 +93,22 @@ img {
 .mt-5 {
   margin-bottom: 3rem;
 }
-
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 @media (max-width: 768px) {
-  p {
+  .hero p {
     font-size: 22px;
   }
-  .content {
+  .hero .content {
     font-size: 18px;
+  }
+  .hero h1 {
+    font-size: 56px;
+  }
+  .hero h2 {
+    font-size: 34px;
   }
   .col-sm-6 {
     text-align: center;
