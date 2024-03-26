@@ -11,7 +11,7 @@
   text-align: center;
   background: var(--branding-color);
   margin-top: 50px;
-  padding: 160px 20px;
+  padding: 120px 80px;
   font-family: var(--default-font-family);
 }
 h1,
@@ -30,10 +30,38 @@ h6 {
 .hero h2 {
   font-size: 50px;
 }
+.hero .container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: max-content;
+}
+p {
+  font-family: var(--default-font-family);
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+  color: black;
+  margin: 10px;
+}
+.hero .content {
+  font-size: 22px;
+  font-weight: 400;
+}
+.about {
+  text-align: center;
+  background: var(--branding-color);
+  margin-top: 50px;
+  padding: 120px 80px;
+  font-family: var(--default-font-family);
+}
 .about-section h1 {
   font-size: 64px;
   line-height: 60px;
 }
+.about-section h2 {
+  font-size: 36px;
+}
+
 .about-paragraph {
   font-size: 22px;
   font-weight: 400;
@@ -42,23 +70,6 @@ h6 {
   width: 500px;
   height: 500px;
 }
-.about-section h2 {
-  font-size: 36px;
-}
-.hero .container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: max-content;
-}
-.hero p {
-  font-family: var(--default-font-family);
-  font-weight: bold;
-  font-style: normal;
-  font-size: 30px;
-  color: black;
-  margin: 10px;
-}
-
 .btn-branding {
   background: var(--primary-color);
   border: none;
@@ -68,7 +79,7 @@ h6 {
   font-weight: normal;
   line-height: 27px;
   padding: 15px 26px;
-  margin: 30px;
+  margin: 30px auto 60px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .col-sm-6 {
@@ -76,10 +87,7 @@ h6 {
   text-align: left;
   padding: 10px;
 }
-.hero .content {
-  font-size: 22px;
-  font-weight: 400;
-}
+
 .primary-link {
   border-radius: 4px;
   padding: 20px 15px;
@@ -115,7 +123,7 @@ h6 {
     flex: auto;
     width: 100%;
   }
-  .container {
+  .hero .container {
     flex-direction: column;
   }
 }
@@ -124,5 +132,13 @@ h6 {
     display: block;
     text-align: center;
     margin: 0 20px;
+  }
+}
+@media (max-width: 768px) {
+  .about-section h1 {
+    font-size: 50px;
+  }
+  .about-section h2 {
+    font-size: 32px;
   }
 }
