@@ -47,7 +47,7 @@ p {
   font-size: 22px;
   font-weight: 400;
 }
-.about {
+.container-all {
   text-align: center;
   background: var(--branding-color);
   margin-top: 50px;
@@ -66,7 +66,7 @@ p {
   font-size: 22px;
   font-weight: 400;
 }
-.about-section img {
+.container-all-section img {
   width: 500px;
   height: 500px;
 }
@@ -105,6 +105,11 @@ p {
   max-width: 100%;
   height: auto;
 }
+.contact-details a {
+  font-size: 22px;
+  font-weight: 400;
+  text-decoration: none;
+}
 @media (max-width: 768px) {
   .hero p {
     font-size: 22px;
@@ -141,10 +146,10 @@ p {
   .content-containerh2 {
     font-size: 32px;
   }
-  .about {
+  .container-all {
     padding: 60px 10px 10px;
   }
-  .about .btn-branding {
+  .container-all .btn-branding {
     margin-bottom: 0px;
   }
   .content-container img {
@@ -156,5 +161,11 @@ p {
   .paragraph {
     font-size: 18px;
     font-weight: 400;
+  }
+  .contact-details a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    overflow-wrap: break-word;
   }
 }
