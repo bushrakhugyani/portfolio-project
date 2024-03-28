@@ -62,7 +62,7 @@ p {
   font-size: 36px;
 }
 
-.about-paragraph {
+.paragraph {
   font-size: 22px;
   font-weight: 400;
 }
@@ -152,5 +152,9 @@ p {
     height: 500px;
     object-fit: scale-down;
     margin-bottom: 300px;
+  }
+  .paragraph {
+    font-size: 18px;
+    font-weight: 400;
   }
 }
