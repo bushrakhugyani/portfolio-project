@@ -1,6 +1,6 @@
 :root {
   --branding-color: #f9dadadb;
-  --primary-color: rgb(99, 113, 186);
+  --primary-color: #6371ba;
   --secondary-color: #fbf9f9;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
@@ -21,7 +21,7 @@
   transition: all 100ms ease-in-out;
 }
 .navbar-nav .nav-link.active {
-  color: blue;
+  color: var(--primary-color);
 }
 .hero {
   text-align: center;
@@ -126,6 +126,39 @@ p {
   font-weight: 400;
   text-decoration: none;
 }
+footer {
+  margin: auto;
+}
+footer h4 {
+  font-size: 50px;
+}
+footer .text-muted {
+  font-size: 22px;
+  font-weight: 400;
+}
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links:hover {
+  color: var(--primary-color);
+}
 @media (max-width: 768px) {
   .hero p {
     font-size: 22px;
@@ -183,5 +216,16 @@ p {
     font-weight: 400;
     text-decoration: none;
     overflow-wrap: break-word;
+  }
+}
+@media (min-width: 768px) {
+  .d-md-flex {
+    display: flex !important;
+  }
+  .mb-5 {
+    margin-bottom: 3rem !important;
+  }
+  .justify-content-between {
+    justify-content: space-between !important;
   }
 }
