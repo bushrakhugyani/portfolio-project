@@ -1,5 +1,5 @@
 :root {
-  --branding-color: #f9dadadb;
+  --branding-color: #d4cfcfdb;
   --primary-color: #6371ba;
   --secondary-color: #fbf9f9;
   --heading-font-family: "Playfair Display", serif;
@@ -40,11 +40,13 @@ h6 {
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
+
 .hero h1 {
-  font-size: 70px;
+  font-size: 60px;
 }
 .hero h2 {
   font-size: 50px;
+  margin-bottom: 50px;
 }
 .hero .container {
   display: flex;
@@ -63,6 +65,7 @@ p {
   font-size: 22px;
   font-weight: 400;
 }
+
 .container-all {
   text-align: center;
   background: var(--branding-color);
@@ -118,14 +121,19 @@ p {
   margin-bottom: 3rem;
 }
 .img-fluid {
-  max-width: 100%;
-  height: auto;
+  max-width: 80%;
+  height: 80%;
 }
 .contact-details a {
   font-size: 22px;
   font-weight: 400;
   text-decoration: none;
 }
+
+a {
+  text-decoration: none;
+}
+
 footer {
   margin: auto;
 }
